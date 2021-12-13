@@ -5,45 +5,49 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public HeroSelectManager heroSelectManager;
     public Button battleButton;
-    public GameObject startMenu;
+    public GameManager gameManager;
     public GameObject winMenu;
     public GameObject failMenu;
     public GameObject selectedMenu;
-    public Button playButton;
     public Button restartButton;
     public Button playAgainButton;
-
+    
     public void Start()
     {
-        ButtonStart();
+        heroSelectManager.OnHeroSelectedCompleted.AddListener(BattleButtonActive);
+        battleButton.onClick.AddListener(BattleButtonClick);
+        RestartButtonStart();
+        gameManager.FailEvent.AddListener(FailMenu);
+        gameManager.SuccessEvent.AddListener(WinMenu);
     }
-    public void ButtonStart()
+    public void BattleButtonActive()
     {
-        playButton.onClick.AddListener(ButtonClick);
+        battleButton.gameObject.SetActive(true);
+    }
+    public void BattleButtonClick()
+    {
+        selectedMenu.SetActive(false);
+    }
+   
+    public void RestartButtonStart()
+    {
         restartButton.onClick.AddListener(ButtonClick);
         playAgainButton.onClick.AddListener(ButtonClick);
-        restartButton.onClick.AddListener(LoadLevel);
-        playAgainButton.onClick.AddListener(LoadLevel);
     }
     public void ButtonClick()
     {
-        startMenu.SetActive(false);
         winMenu.SetActive(false);
         failMenu.SetActive(false);
+        gameManager.LoadLevel();
     }
-    public void LoadLevel()
+    public void FailMenu()
     {
-        Application.LoadLevel(Application.loadedLevel);
+        failMenu.SetActive(true);
     }
-    public void MenuActive(GameObject menu,bool isActive)
+    public void WinMenu()
     {
-        StartCoroutine(MenuWait(menu, isActive));
+        winMenu.SetActive(true);
     }
-    public IEnumerator MenuWait(GameObject menu, bool isActive)
-    {
-        yield return new WaitForSeconds(3f);
-        menu.SetActive(isActive);
-    }
-
 }

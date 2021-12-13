@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System;
 
 [Serializable]
-public class SizeFeature 
+public class SizeStats 
 {
     public Sizes size;
+    public float sizeMultiplier;
     public HeroStats heroStats;
 }

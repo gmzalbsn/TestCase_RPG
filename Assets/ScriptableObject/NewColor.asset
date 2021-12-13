@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72a94104cfa570f49a87dc4e2ffbd1e8, type: 3}
   m_Name: NewColor
   m_EditorClassIdentifier: 
-  colorFeature:
+  colorStats:
   - color: 0
-    shapeFeatures:
+    material: {fileID: 2100000, guid: 7c102beae2f5c6241b61b9975d71717a, type: 2}
+    colorSubStats:
     - shape: 0
       heroStats:
         healthPoints: 0
@@ -23,11 +24,9 @@ MonoBehaviour:
       heroStats:
         healthPoints: 50
         attackPoints: 0
-    heroStats:
-      healthPoints: 0
-      attackPoints: 0
   - color: 1
-    shapeFeatures:
+    material: {fileID: 2100000, guid: 74b16b2cfb681d343a8b57bda1f4f434, type: 2}
+    colorSubStats:
     - shape: 0
       heroStats:
         healthPoints: 100
@@ -36,11 +35,9 @@ MonoBehaviour:
       heroStats:
         healthPoints: 0
         attackPoints: 20
-    heroStats:
-      healthPoints: 0
-      attackPoints: 0
   - color: 2
-    shapeFeatures:
+    material: {fileID: 2100000, guid: 69f0c07128143894987082910d099c81, type: 2}
+    colorSubStats:
     - shape: 0
       heroStats:
         healthPoints: 150
@@ -49,6 +46,3 @@ MonoBehaviour:
       heroStats:
         healthPoints: 0
         attackPoints: 30
-    heroStats:
-      healthPoints: 0
-      attackPoints: 0

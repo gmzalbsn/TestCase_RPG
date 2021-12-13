@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using System;
 
 [Serializable]
-public class ColorFeature 
+public class ColorsSubStats
 {
-    public Colors color;
-    public List<ShapeFeature> shapeFeatures;
+    public Shapes shape;
     public HeroStats heroStats;
 }

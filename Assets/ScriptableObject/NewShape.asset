@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c922a809f48be8d4481ecd5a1b94d246, type: 3}
   m_Name: NewShape
   m_EditorClassIdentifier: 
-  shapesFeature:
+  shapesStats:
   - shape: 0
+    mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     heroStats:
       healthPoints: 100
       attackPoints: 20
   - shape: 1
+    mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
     heroStats:
       healthPoints: 200
       attackPoints: 10

@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15dd8ca876133b4e85d0fd149748c5e, type: 3}
   m_Name: NewSize
   m_EditorClassIdentifier: 
-  sizeFeature:
+  sizeStats:
   - size: 0
+    sizeMultiplier: 2
     heroStats:
       healthPoints: 100
       attackPoints: 0
   - size: 1
+    sizeMultiplier: 1
     heroStats:
       healthPoints: -50
       attackPoints: 0

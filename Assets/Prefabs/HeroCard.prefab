@@ -167,11 +167,14 @@ GameObject:
   - component: {fileID: 8206876935219072700}
   - component: {fileID: 8206876935219072690}
   - component: {fileID: 8206876935219072701}
+  - component: {fileID: 64929913}
   - component: {fileID: 8206876935219072691}
   - component: {fileID: 1551000696}
-  - component: {fileID: 64929913}
+  - component: {fileID: 2429413031039311514}
+  - component: {fileID: 307279774}
+  - component: {fileID: 307279773}
   m_Layer: 5
-  m_Name: Hero
+  m_Name: HeroCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -236,40 +239,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8206876935219072691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8206876935219072703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7017926eddb5b940aceddd167a50297, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heroStats:
-    healthPoints: 100
-    attackPoints: 50
-  heroName: 0
-  shape: 0
-  size: 0
-  color: 0
---- !u!114 &1551000696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8206876935219072703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f364faaeb71730f49a7a5774d0c9efbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 8206876934931075948}
-  healthText: {fileID: 8206876936322644113}
-  attackText: {fileID: 8206876934575949214}
 --- !u!114 &64929913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +282,99 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8206876935219072691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8206876935219072703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7017926eddb5b940aceddd167a50297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  heroStats:
+    healthPoints: 100
+    attackPoints: 10
+  shape: 0
+  size: 0
+  color: 0
+--- !u!114 &1551000696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8206876935219072703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f364faaeb71730f49a7a5774d0c9efbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 8206876934931075948}
+  healthText: {fileID: 8206876936322644113}
+  attackText: {fileID: 8206876934575949214}
+--- !u!114 &2429413031039311514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8206876935219072703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce2fe3b6a9de6c45abcdec7d9f5f7ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!23 &307279774
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8206876935219072703}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &307279773
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8206876935219072703}
+  m_Mesh: {fileID: 0}
 --- !u!1 &8206876936322644115
 GameObject:
   m_ObjectHideFlags: 0
